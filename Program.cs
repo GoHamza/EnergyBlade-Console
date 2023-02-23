@@ -39,9 +39,8 @@ namespace EnergyBlade
             
             Console.ForegroundColor = ConsoleColor.Green;
             ConsoleKeyInfo keyInfo;
-            Console.WriteLine(@"///////'///////
+            Console.WriteLine(@"
 
-                                                                                          
              ░▓▓▓▓▓▓▓▒▓▓▓▒                                                                
             ░▓▓▓▓▓▓░  ▒▓▓▒▒▓▓▓▓▒                                                          
            ░▓▓▓▓▓▓░            ▒▓▒▓                                                       
@@ -134,7 +133,7 @@ namespace EnergyBlade
                         System.Threading.Thread.Sleep(1000);
                     }
                     Console.WriteLine("  Finishing up...");
-                    krnlApi.Execute("loadstring(game:HttpGet(\"https://github.com/GoHamza/asset-basset/blob/main/energyblademain.lua?raw=true\"))()");
+                    krnlApi.Execute("loadstring(game:HttpGet(\"https://github.com/GoHamza/EnergyBlade/blob/main/MainUI.lua?raw=true\"))");
                     stopwatch2.Stop();
                     Console.WriteLine("  All done! Took ~{0} seconds. Press any key to close this window.", stopwatch2.ElapsedMilliseconds/1000);
                     Console.ReadKey();
